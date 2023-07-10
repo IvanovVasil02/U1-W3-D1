@@ -303,9 +303,8 @@ console.log(findMovie(movies, "tt2395427"));
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
 console.log("ESERCIZIO 15");
-const firstMovie = function (array, data) {
-	const isTheLast = (array) => array.Year === data;
-	const firstu = array.findIndex(isTheLast);
-	return firstu;
+const firstMovie = function (array, year) {
+	const first_movie = array.findIndex((movie) => movie.Year === year);
+	return first_movie;
 };
-console.log(firstMovie(movies, 2005));
+console.log(firstMovie(movies, "2005"));
