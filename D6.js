@@ -293,11 +293,11 @@ console.log(actualMovies(movies));
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 console.log("ESERCIZIO 14");
-const findMovie = function (array, name) {
-	const found = array.find((movie) => movie.Title === name);
+const findMovie = function (array, imdbID) {
+	const found = array.find((movie) => movie.Title === imdbID);
 	return found;
 };
-console.log(findMovie(movies, "The Avengers"));
+console.log(findMovie(movies, "tt2395427"));
 
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
